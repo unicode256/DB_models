@@ -37,11 +37,11 @@ const Ad = sequelize.define('ads', {
         allowNull: true
     },
     car_model_id: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: true
     },
     car_generation_id: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: true
     },
     complectation: {

@@ -5,11 +5,11 @@ const sequelize = new Sequelize(DB_ACCESS);
 
 const CarModel = sequelize.define('car_models', {
     mark_id: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: true
     },
     system_id: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: true
     },
     name: {

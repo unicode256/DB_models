@@ -5,7 +5,7 @@ const sequelize = new Sequelize(DB_ACCESS);
 
 const TypeOfTransmission = sequelize.define('transmission_types', {
     system_id: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: true
     },
     name_ru: {

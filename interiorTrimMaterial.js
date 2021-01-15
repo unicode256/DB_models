@@ -5,7 +5,7 @@ const sequelize = new Sequelize(DB_ACCESS);
 
 const InteriorTrimMaterial = sequelize.define('interior_trim_materials', {
     system_id: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: true
     },
     name_ru: {

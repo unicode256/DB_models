@@ -5,7 +5,7 @@ const sequelize = new Sequelize(DB_ACCESS);
 
 const ExchangeVariant = sequelize.define('exchange_variants', {
     system_id: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: true
     },
     name_ru: {

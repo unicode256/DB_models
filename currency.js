@@ -4,6 +4,10 @@ const DB_ACCESS = require('../config').DB_ACCESS;
 const sequelize = new Sequelize(DB_ACCESS);
 
 const Currency = sequelize.define('currency', {
+    system_id: {
+        type: Sequelize.INTEGER,
+        allowNull: true
+    },
     name: {
         type: Sequelize.STRING,
         allowNull: true

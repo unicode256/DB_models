@@ -9,7 +9,7 @@ const City = sequelize.define('cities', {
         allowNull: true
     },
     system_id: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: true
     },
     name_ru: {
