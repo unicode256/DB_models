@@ -5,7 +5,7 @@ const sequelize = new Sequelize(DB_ACCESS);
 
 const InteriorColor = sequelize.define('interior_colors', {
     system_id: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: true
     },
     name_ru: {

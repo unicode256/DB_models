@@ -5,12 +5,16 @@ const DB_ACCESS = require('../config').DB_ACCESS;
 const sequelize = new Sequelize(DB_ACCESS);
 
 const User = sequelize.define('users', {
+    system_id: {
+        type: Sequelize.INTEGER,
+        allowNull: true
+    },
     name: {
         type: Sequelize.STRING,
         allowNull: true
     },
     city_id: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: true
     },
     phone_number: {

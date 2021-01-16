@@ -5,7 +5,7 @@ const sequelize = new Sequelize(DB_ACCESS);
 
 const DriveUnit = sequelize.define('drive_units', {
     system_id: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: true
     },
     name_ru: {

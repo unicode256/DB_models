@@ -5,7 +5,7 @@ const sequelize = new Sequelize(DB_ACCESS);
 
 const State = sequelize.define('states', {
     system_id: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: true
     },
     name_ru: {

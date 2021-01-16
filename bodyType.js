@@ -5,7 +5,7 @@ const sequelize = new Sequelize(DB_ACCESS);
 
 const BodyType = sequelize.define('body_types', {
     system_id: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: true
     },
     name_ru: {
