@@ -66,11 +66,6 @@ const Ad = sequelize.define('ads', {
         type: Sequelize.INTEGER,
         allowNull: true
     },
-    number_of_cars: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        defaultValue: 0
-    },
     text: {
         type: Sequelize.TEXT,
         allowNull: true
@@ -120,20 +115,9 @@ const Ad = sequelize.define('ads', {
         type: Sequelize.STRING,
         allowNull: true
     },
-    is_hybrid: {
+    engine_type: {
         type: Sequelize.INTEGER,
-        allowNull: false,
-        defaultValue: 0
-    },
-    is_propan: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        defaultValue: 0
-    },
-    is_metan: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        defaultValue: 0
+        allowNull: true
     },
     is_abs: {
         type: Sequelize.INTEGER,
@@ -175,30 +159,13 @@ const Ad = sequelize.define('ads', {
         allowNull: false,
         defaultValue: 0
     },
-    is_luke: {
+    roof: {
         type: Sequelize.INTEGER,
-        allowNull: false,
-        defaultValue: 0
+        allowNull: true
     },
-    is_panoramic_roof: {
+    conditioning: {
         type: Sequelize.INTEGER,
-        allowNull: false,
-        defaultValue: 0
-    },
-    is_heater: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        defaultValue: 0
-    },
-    is_climate_control: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        defaultValue: 0
-    },
-    is_air_conditioning: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        defaultValue: 0
+        allowNull: true
     },
     is_heated_mirrors: {
         type: Sequelize.INTEGER,
@@ -225,10 +192,9 @@ const Ad = sequelize.define('ads', {
         allowNull: false,
         defaultValue: 0
     },
-    is_cruise_control: {
+    cruise_control: {
         type: Sequelize.INTEGER,
-        allowNull: false,
-        defaultValue: 0
+        allowNull: true
     },
     is_multimedia_steering_wheel_control: {
         type: Sequelize.INTEGER,
@@ -280,17 +246,11 @@ const Ad = sequelize.define('ads', {
         allowNull: false,
         defaultValue: 0
     },
-    is_xenon_headlights: {
+    headlights: {
         type: Sequelize.INTEGER,
-        allowNull: false,
-        defaultValue: 0
+        allowNull: true
     },
     is_fog_lights: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        defaultValue: 0
-    },
-    is_led_headlights: {
         type: Sequelize.INTEGER,
         allowNull: false,
         defaultValue: 0
@@ -300,20 +260,18 @@ const Ad = sequelize.define('ads', {
         allowNull: false,
         defaultValue: 0
     },
-    is_rear_view_camera: {
+    camera: {
         type: Sequelize.INTEGER,
-        allowNull: false,
-        defaultValue: 0
+        allowNull: true
     },
     is_control_dead_zones: {
         type: Sequelize.INTEGER,
         allowNull: false,
         defaultValue: 0
     },
-    is_parking_sensors: {
+    parking_sensors: {
         type: Sequelize.INTEGER,
-        allowNull: false,
-        defaultValue: 0
+        allowNull: true
     },
     is_alloy_wheels: {
         type: Sequelize.INTEGER,
@@ -330,7 +288,106 @@ const Ad = sequelize.define('ads', {
         type: Sequelize.INTEGER,
         allowNull: false,
         defaultValue: 0
-    }
+    },
+    trunk_value: {
+        type: Sequelize.INTEGER,
+        allowNull: true
+    },
+    fuel_consumption: {
+        type: Sequelize.INTEGER,
+        allowNull: true
+    },
+    clearance: {
+        type: Sequelize.INTEGER,
+        allowNull: true
+    },
+    owners: {
+        type: Sequelize.INTEGER,
+        allowNull: true
+    },
+    is_warranty: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        defaultValue: 0
+    },
+    is_carplay: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        defaultValue: 0
+    },
+    is_androidauto: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        defaultValue: 0
+    },
+    is_power_socket: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        defaultValue: 0
+    },
+    is_rear_screens: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        defaultValue: 0
+    },
+    is_power_steering_wheel: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        defaultValue: 0
+    },
+    is_electric_control_steering_wheel: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        defaultValue: 0
+    },
+    suspension:{
+        type: Sequelize.INTEGER,
+        allowNull: true
+    },
+    is_electric_miror_drive: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        defaultValue: 0
+    },
+    is_electric_dashboard: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        defaultValue: 0
+    },
+    is_electric_trunk_drive: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        defaultValue: 0
+    },
+    is_broken: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        defaultValue: 0
+    },
+    is_right_hand_drive: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        defaultValue: 0
+    },
+    is_headlights_washer: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        defaultValue: 0
+    },
+    disks: {
+        type: Sequelize.INTEGER,
+        allowNull: true
+    },
+    is_third_row_of_seats: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        defaultValue: 0
+    },
+    is_seats_ventilation: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        defaultValue: 0
+    },
 });
 
 sequelize.sync()
